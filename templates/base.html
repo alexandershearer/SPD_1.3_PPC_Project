@@ -6,13 +6,22 @@
     <title>
         {% block title %}
             <!-- Title goes here -->
+            No Title
         {% endblock %}
     </title>
+    <!-- Included Head Stuff -->
+    <link rel="stylesheet" href="/static/styles/base.css">
+    <link rel='stylesheet' href='/static/styles/navbar.css'>
+    <link rel='stylesheet' href='/static/styles/footer.css'>
+    {% block head %}
+        <!-- Head goes here -->
+    {% endblock %}
 </head>
 <body>
     <main>
         {% block navbar %}
             <!-- Navbar goes here -->
+            {% include 'navbar.html' %}
         {% endblock %}
         {% block content %}
             <!-- Content goes here -->
@@ -21,6 +30,7 @@
     <footer>
         {% block footer %}
             <!-- Footer goes here -->
+            {% include 'footer.html' %}
         {% endblock %}
     </footer>
 </body>

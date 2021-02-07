@@ -2,7 +2,25 @@
     {% block title %}
         Home page
     {% endblock %}
+    {% block head %}
+    <link rel="stylesheet" href="/static/styles/home.css">
+    {% endblock %}
     {% block content %}
-        <h3>Welcome to the home page!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!</p>
+    <div class='homeContent'>
+        <div class="hero">
+            <h3>Welcome to the home page!</h3>
+            <div class="heroBlock">
+                <img src="https://via.placeholder.com/450x150">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!</p>    
+            </div>
+        </div>
+        <div class="showcase">
+            <h3>Get started with a few of these ideas!</h3>
+            <div class="showcaseImages">
+                <img src="https://via.placeholder.com/150">
+                <img src="https://via.placeholder.com/150">
+                <img src="https://via.placeholder.com/150">
+            </div>
+        </div>
+    </div>
     {% endblock %}

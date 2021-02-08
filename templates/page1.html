@@ -7,6 +7,18 @@
     {% endblock %}
     {% block content %}
     <div class='page1Content'>
-        Page1 Content goes here
+        {% macro newBox() %}
+            <div class="editBox" contentEditable="true">
+                <!-- EditableContent -->
+                something goes here
+            </div>
+        {%- endmacro %}
+        <button onclick="
+                {{newBox()}}
+            ">
+                Create New Box
+        </button>
+        
+
     </div>
     {% endblock %}

@@ -1,0 +1,32 @@
+.homeContent > div, .homeContent > div > div{
+    padding-top: 1em;
+}
+.homeContent {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+.hero {
+    text-align: center;
+}
+.heroBlock {
+    display: flex;
+    flex-direction: row;
+}
+.heroBlock > img {
+    height: auto;
+    max-width: 80vw;
+    width: 200%;
+}
+.heroBlock > p {
+    display: flex;
+    align-items: center;
+}
+.showcase {
+    text-align: center;
+}
+.showcaseImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

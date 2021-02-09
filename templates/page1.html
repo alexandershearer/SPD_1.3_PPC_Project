@@ -4,21 +4,13 @@
     {% endblock %}
     {% block head %}
     <link rel="stylesheet" href="/static/styles/page1.css">
+    <link rel="stylesheet" href="/static/styles/form.css">
     {% endblock %}
     {% block content %}
     <div class='page1Content'>
-        {% macro newBox() %}
-            <div class="editBox" contentEditable="true">
-                <!-- EditableContent -->
-                something goes here
-            </div>
-        {%- endmacro %}
-        <button onclick="
-                {{newBox()}}
-            ">
-                Create New Box
-        </button>
-        
-
+        {% for event in eventList: %}
+            {% include 'form.html' %}
+        {% endfor %}
+        {% include 'form.html' %}
     </div>
     {% endblock %}

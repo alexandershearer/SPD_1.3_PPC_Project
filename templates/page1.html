@@ -4,9 +4,13 @@
     {% endblock %}
     {% block head %}
     <link rel="stylesheet" href="/static/styles/page1.css">
+    <link rel="stylesheet" href="/static/styles/form.css">
     {% endblock %}
     {% block content %}
     <div class='page1Content'>
-        Page1 Content goes here
+        {% for event in eventList: %}
+            {% include 'form.html' %}
+        {% endfor %}
+        {% include 'form.html' %}
     </div>
     {% endblock %}

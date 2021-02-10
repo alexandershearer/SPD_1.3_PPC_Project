@@ -2,9 +2,7 @@
     padding-top: 1em;
 }
 .homeContent {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
+    padding: 0 1em 1em 1em;
 }
 .hero {
     text-align: center;
@@ -14,8 +12,8 @@
     flex-direction: row;
 }
 .heroBlock > img {
+    margin-right: 1em;
     height: auto;
-    max-width: 80vw;
     width: 200%;
 }
 .heroBlock > p {

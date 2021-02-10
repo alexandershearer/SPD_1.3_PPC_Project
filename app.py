@@ -8,10 +8,10 @@ def homepage():
     """A homepage."""
     return render_template('home.html')
 
-@app.route('/page1')
-def page1():
+@app.route('/formPage')
+def formPage():
     """Page1."""
-    return render_template('page1.html')
+    return render_template('formPage.html')
 
 if __name__ == '__main__':
     app.config['ENV'] = 'development'

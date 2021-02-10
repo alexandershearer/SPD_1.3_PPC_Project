@@ -4,8 +4,6 @@
     border: 1px solid black;
     padding: 1em;
     margin: 1em 20vw 1em 20vw;
-    /* margin: 1em; */
-    /* width: 30vw; */
 }
 .form > input, textarea{
     text-align: center;

@@ -6,3 +6,17 @@
     margin: 1em;
     width: 30vw;
 }
+.form > input, textarea{
+    text-align: center;
+    border: 1px solid lightgray;
+}
+.form > * {
+    margin-bottom: .5em;
+}
+.eventName {
+    height: 2em;
+    font-size: 1.5em;
+}
+.eventDiscription {
+    max-width: 100%;
+}

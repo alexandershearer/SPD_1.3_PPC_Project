@@ -12,18 +12,8 @@ def homepage():
 def formList():
     """Form list page"""
     jsonData = [
-    {
-       "eventName":"the first event",
-       "startDate":"",
-       "endDate":"",
-       "participants":"",
-       "location":"",
-       "budget":"",
-       "suppliers":"",
-       "eventDiscription":"some sort of discription for this amazing event that never took place"
-    },
-    {
-        "eventName":"the second event",
+        {
+        "eventName":"the first event",
         "startDate":"",
         "endDate":"",
         "participants":"",
@@ -31,18 +21,28 @@ def formList():
         "budget":"",
         "suppliers":"",
         "eventDiscription":"some sort of discription for this amazing event that never took place"
-    },
-    {
-        "eventName":"the third event",
-        "startDate":"",
-        "endDate":"",
-        "participants":"",
-        "location":"",
-        "budget":"",
-        "suppliers":"",
-        "eventDiscription":"some sort of discription for this amazing event that never took place"
-    }
-]
+        },
+        {
+            "eventName":"the second event",
+            "startDate":"",
+            "endDate":"",
+            "participants":"",
+            "location":"",
+            "budget":"",
+            "suppliers":"",
+            "eventDiscription":"some sort of discription for this amazing event that never took place"
+        },
+        {
+            "eventName":"the third event",
+            "startDate":"",
+            "endDate":"",
+            "participants":"",
+            "location":"",
+            "budget":"",
+            "suppliers":"",
+            "eventDiscription":"some sort of discription for this amazing event that never took place"
+        }
+    ]
     return render_template('formList.html', jsonData=jsonData)
 
 # Dynamic page for individual forms
@@ -54,17 +54,42 @@ def formList():
 @app.route('/formList/<formName>')
 def formPage(formName):
     """dynamic page for individual forms"""
-    with open('./static/jsonTestFiles/formData.json', 'r') as data:
-        jsonData = json.load(data)
-        storedForm = None
-    for form in jsonData:
-        if form["eventName"] == {formName}:
-            storedForm = form
+    jsonData = [
+        {
+            "eventName":"the first event",
+            "startDate":"",
+            "endDate":"",
+            "participants":"",
+            "location":"",
+            "budget":"",
+            "suppliers":"",
+            "eventDiscription":"some sort of discription for this amazing event that never took place"
+        },
+        {
+            "eventName":"the second event",
+            "startDate":"",
+            "endDate":"",
+            "participants":"",
+            "location":"",
+            "budget":"",
+            "suppliers":"",
+            "eventDiscription":"some sort of discription for this amazing event that never took place"
+        },
+        {
+            "eventName":"the third event",
+            "startDate":"",
+            "endDate":"",
+            "participants":"",
+            "location":"",
+            "budget":"",
+            "suppliers":"",
+            "eventDiscription":"some sort of discription for this amazing event that never took place"
+        }
+    ]
     context = {
-        'storedForm': storedForm,
-        'jsonData': jsonData
+        'jsonData':jsonData,
+        'formName':formName
     }
-    print(jsonData)
     return render_template('formPage.html', context=context)
 
 if __name__ == '__main__':

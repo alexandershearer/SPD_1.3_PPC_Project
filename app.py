@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import random
+import random, json, os
 
 app = Flask(__name__)
 
@@ -18,6 +18,21 @@ def formList():
 def formPage(formName):
     """dynamic page for individual forms"""
     return render_template('formPage.html')
+
+# @app.route('/formList/<formName>')
+# def formPage(formName):
+#     """dynamic page for individual forms"""
+#     with open('./static/jsonTestFiles/formData.json', 'r') as data:
+#         jsonData = json.load(data)
+#     for form in jsonData:
+#         if form["eventName"] == {{formName}}:
+#             storedForm = form
+#     context = {
+#         'storedForm': storedForm,
+#         'jsonData': jsonData
+#     }
+#     print(jsonData)
+#     return render_template('formPage.html', context)
 
 if __name__ == '__main__':
     app.config['ENV'] = 'development'

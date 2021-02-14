@@ -9,7 +9,7 @@
     <div class='formListContent'>
         <div class="formList">
             <!-- storedForms is json format object w/ info -->
-            {% for form in storedForms %}
+            {% for form in jsonData %}
                 <div class="formItem">
                     <a href="/formList/{{form[eventName]}}">
                         <div class="formItemContent">

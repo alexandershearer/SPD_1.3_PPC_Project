@@ -1,10 +1,12 @@
+.formPageContent {
+    text-align: center;
+}
 .form {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     padding: 1em;
-    margin: 1em;
-    width: 30vw;
+    margin: 1em 20vw 1em 20vw;
 }
 .form > input, textarea{
     text-align: center;

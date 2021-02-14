@@ -1,0 +1,32 @@
+[
+    {
+       "eventName":"the first event",
+       "startDate":"",
+       "endDate":"",
+       "participants":"",
+       "location":"",
+       "budget":"",
+       "suppliers":"",
+       "eventDiscription":"some sort of discription for this amazing event that never took place"
+    },
+    {
+        "eventName":"the second event",
+        "startDate":"",
+        "endDate":"",
+        "participants":"",
+        "location":"",
+        "budget":"",
+        "suppliers":"",
+        "eventDiscription":"some sort of discription for this amazing event that never took place"
+    },
+    {
+        "eventName":"the third event",
+        "startDate":"",
+        "endDate":"",
+        "participants":"",
+        "location":"",
+        "budget":"",
+        "suppliers":"",
+        "eventDiscription":"some sort of discription for this amazing event that never took place"
+    }
+]

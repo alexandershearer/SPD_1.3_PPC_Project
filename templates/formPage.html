@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
     {% block title %}
-        Page1
+        formPage
     {% endblock %}
     {% block head %}
     <link rel="stylesheet" href="/static/styles/formPage.css">
@@ -8,6 +8,30 @@
     {% endblock %}
     {% block content %}
     <div class='formPageContent'>
-        {% include 'form.html' %}
+        <form action="">
+            <div class="form">
+                <input type="text" placeholder="Event Name" class="eventName" style="border: none;">
+                <div class="date">
+                    <div class="dateItem">
+                        <label for="startDate">Start: </label>
+                        <input type="date" name='startDate'>
+                    </div>
+                    <div class="dateItem">
+                        <label for="endDate">End: </label>
+                        <input type="date" name='endDate'>
+                    </div>
+                </div>
+                <label for="participants">Participants: </label>
+                <input type="email" name="participants" placeholder="something@email.com">
+                <label for="location">Location: </label>
+                <input type="address" name="location" placeholder="123 Sesame Street">
+                <label for="budget">Budget: </label>
+                <input type="number" name="budget" placeholder="$0.0">
+                <label for="suppliers">Suppliers: </label>
+                <input type="email" name="suppliers" placeholder="something@email.com / Location / Name">
+                <label for="eventDiscription">Disc: </label>
+                <textarea name="eventDiscription" class="eventDiscription" cols="30" rows="10" placeholder="Discription..."></textarea>
+            </div>
+        </form>
     </div>
     {% endblock %}

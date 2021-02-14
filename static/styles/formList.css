@@ -1,0 +1,15 @@
+.formList {
+    padding: 1em;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formItem {
+    border: solid black 1px;
+    width: 20vw;
+    margin: 0 1em 1em 0;
+}
+.formItemContent {
+    color: black;
+    padding: 1em;
+}

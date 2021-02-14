@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+    {% block title %}
+        formsList
+    {% endblock %}
+    {% block head %}
+    <link rel="stylesheet" href="/static/styles/formList.css">
+    {% endblock %}
+    {% block content %}
+    <div class='formListContent'>
+        <div class="formList">
+            <!-- storedForms is json format object w/ info -->
+            {% for form in storedForms %}
+                <div class="formItem">
+                    <a href="/formList/{{form[eventName]}}">
+                        <div class="formItemContent">
+                            <h3>{{form[eventName]}}</h3>
+                            <p>{{form[eventDiscription]}}</p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+            <!-- Testing Purpose -->
+            {% for num in range(9) %}
+                <div class="formItem">
+                    <a href="/formList/{{num}}">
+                        <div class="formItemContent">
+                            <h3>someHeader</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, repudiandae. Eum quasi dolorem nulla cupiditate fuga dignissimos, odit beatae temporibus aspernatur nihil tenetur atque provident? Possimus commodi aspernatur incidunt cupiditate.</p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}

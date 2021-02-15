@@ -1,26 +1,30 @@
 {% extends 'base.html' %}
-    {% block title %}
-        Home page
-    {% endblock %}
-    {% block head %}
-    <link rel="stylesheet" href="/static/styles/home.css">
-    {% endblock %}
-    {% block content %}
-    <div class='homeContent'>
-        <div class="hero">
-            <h1>Welcome to the home page!</h1>
-            <div class="heroBlock">
-                <img src="https://via.placeholder.com/450x100">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!</p>    
-            </div>
-        </div>
-        <div class="showcase">
-            <h2>Get started with a few of these ideas!</h2>
-            <div class="showcaseImages">
-                <img src="https://via.placeholder.com/150">
-                <img src="https://via.placeholder.com/150">
-                <img src="https://via.placeholder.com/150">
-            </div>
+{% block title %}
+Home page
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/styles/home.css">
+{% endblock %}
+{% block content %}
+<div class='homeContent'>
+    <div class="hero">
+        <h1>Welcome to the home page!</h1>
+        <div class="heroBlock">
+            <img class="greetingImg"
+                src="https://lh3.googleusercontent.com/proxy/QGV_Ya9U6bMrPC649pfozbn_lcNfzjvp2g-F1PCmYy-0hS6qq-ugMs6zdrsb0h7GTPdDxQQDsOlsxxDNERo0lXFAGiOUXEaBpTJawGJ8ppRgzDHJ_2fFPALR6f5uA8udUHR0T39-SohQzdTgXCbqcsTJjx_CdDDX">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at
+                porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!
+            </p>
         </div>
     </div>
-    {% endblock %}
+    <div class="showcase">
+        <h2>Get started with a few of these ideas!</h2>
+        <div class="showcaseImages">
+            <img class="showImg"
+                src="https://www.bulgarihotels.com/.imaging/bhr-wide-big-jpg/dam/BEIJING/what-s-on/WSTON_April/May%20Article%2019.zip/wedding-fair.JPG/jcr%3Acontent">
+            <img class="showImg" src="https://www.sgvtribune.com/wp-content/uploads/2019/03/iStock-999985068-1.jpg">
+            <img class="showImg" src="https://www.bexleyflorida.com/media/6496149/concert-venue-blog.jpg?format=jpeg">
+        </div>
+    </div>
+</div>
+{% endblock %}

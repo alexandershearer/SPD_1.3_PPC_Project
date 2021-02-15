@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: grey;
-    color: white;
+    background-color: #DDCAD9;
+    color: #7C616C;
     padding: 1.5em;
+    border-bottom: 1px solid black;
 }
 .navLeft, .navRight {
     display: flex;
@@ -13,10 +14,13 @@
 }
 .navbar > ul > li {
     padding-right: 1em;
+    background-color: #DDCAD9;
 }
 a {
-    color: white;
+    font-size: large;
+    color: #7C616C;
     text-decoration: none;
+    background-color: #DDCAD9;
 }
 #homeLink {
     border-bottom: solid white 2px;

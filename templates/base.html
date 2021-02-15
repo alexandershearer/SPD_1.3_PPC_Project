@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% block title %}
-            <!-- Title goes here -->
-            No Title
+        <!-- Title goes here -->
+        No Title
         {% endblock %}
     </title>
     <!-- Included Head Stuff -->
     <link rel="stylesheet" href="/static/styles/base.css">
     <link rel='stylesheet' href='/static/styles/navbar.css'>
     <link rel='stylesheet' href='/static/styles/footer.css'>
+
     {% block head %}
-        <!-- Head goes here -->
+    <!-- Head goes here -->
     {% endblock %}
 </head>
+
 <body>
     <div class='mainNavbar'>
         {% block navbar %}
-            <!-- Navbar goes here -->
-            {% include 'navbar.html' %}
+        <!-- Navbar goes here -->
+        {% include 'navbar.html' %}
         {% endblock %}
     </div>
     <div class='main'>
         {% block content %}
-            <!-- Content goes here -->
+        <!-- Content goes here -->
         {% endblock %}
-    <div>
-    <footer>
-        {% block footer %}
-            <!-- Footer goes here -->
-            {% include 'footer.html' %}
-        {% endblock %}
-    </footer>
+        <div>
+            <footer>
+                {% block footer %}
+                <!-- Footer goes here -->
+                {% include 'footer.html' %}
+                {% endblock %}
+            </footer>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,26 +1,32 @@
 {% extends 'base.html' %}
-    {% block title %}
-        Home page
-    {% endblock %}
-    {% block head %}
-    <link rel="stylesheet" href="/static/styles/home.css">
-    {% endblock %}
-    {% block content %}
-    <div class='homeContent'>
-        <div class="hero">
-            <h1>Welcome to the home page!</h1>
-            <div class="heroBlock">
-                <img src="https://via.placeholder.com/450x100">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!</p>    
-            </div>
-        </div>
-        <div class="showcase">
-            <h2>Get started with a few of these ideas!</h2>
-            <div class="showcaseImages">
-                <img src="https://via.placeholder.com/150">
-                <img src="https://via.placeholder.com/150">
-                <img src="https://via.placeholder.com/150">
-            </div>
+{% block title %}
+Home page
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/styles/home.css">
+{% endblock %}
+{% block content %}
+<div class='homeContent'>
+    <div class="hero">
+        <h1>Welcome to the home page!</h1>
+        <div class="heroBlock">
+            <img src="https://www.dammitjackevents.com/wp-content/uploads/2017/09/Party-Event.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at
+                porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!
+            </p>
         </div>
     </div>
-    {% endblock %}
+    <div class="greetingBreak">
+        <h2 class="breakText">Get started with a few of these ideas!</h2>
+    </div>
+    <div class="showcase">
+        <div class="showcaseImages">
+            <img class="shwImg"
+                src="https://www.beaches.com/blog/content/images/2019/11/Beach-Wedding-Detail-Aisle-Flowers-1.jpg">
+            <img class="shwImg" src="https://www.sgvtribune.com/wp-content/uploads/2019/03/iStock-999985068-1.jpg">
+            <img class="shwImg"
+                src="https://www.rollingstone.com/wp-content/uploads/2020/03/ConcertCrowd.jpg?resize=1800,1200&w=1800">
+        </div>
+    </div>
+</div>
+{% endblock %}

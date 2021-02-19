@@ -1,12 +1,11 @@
 .homeContent > div, .homeContent > div > div{
     padding-top: 1em;
 }
-.homeContent {
-    padding: 0 1em 1em 1em;
-}
 .hero {
     text-align: center;
-    margin-top: 20px;
+    font-weight: 600;
+    font-size: larger;
+    padding: 0 1em 1em 1em;
 }
 .heroBlock {
     margin-top: 15px;
@@ -15,29 +14,42 @@
     flex-direction: row;
 }
 .heroBlock > img {
-    margin-right: 1em;
-    height: 400;
-    width: 125%;
-    border: 1px solid black;
-    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
+    height: 500px;
+    width: 950px;
+    border: 2px solid black;
 }
 .heroBlock > p {
     display: flex;
     align-items: center;
 }
+.greetingBreak{
+    margin-top: 50px;
+    text-align: center;
+}
+.breakText{
+    color: #d5c9c4;
+    background: rgb(207,133,107);
+    background: linear-gradient(180deg, rgba(207,133,107,1) 0%, rgba(39,26,25,1) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 38pt;
+    border: 2px solid black;
+}
 .showcase {
     margin-top: 25px;
     text-align: center;
+    margin-top: 30px;
+    margin-left: 25px;
+    padding-bottom: 20px;
 }
 .showcaseImages {
-    margin-top: 30px;
+    width: 500px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.showImg {
-    padding-right: 15px;
-    width: 600px;
-    height: 250px;
+.shwImg{
+    padding-right: 20px;
 }

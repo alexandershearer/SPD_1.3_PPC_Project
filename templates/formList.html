@@ -11,16 +11,16 @@
             <!-- storedForms is json format object w/ info -->
             {% for form in jsonData %}
                 <div class="formItem">
-                    <a href="/formList/{{form[eventName]}}">
+                    <a href="/formList/{{form['eventName']}}">
                         <div class="formItemContent">
-                            <h3>{{form[eventName]}}</h3>
-                            <p>{{form[eventDiscription]}}</p>
+                            <h3>{{form['eventName']}}</h3>
+                            <p>{{form['eventDiscription']}}</p>
                         </div>
                     </a>
                 </div>
             {% endfor %}
             <!-- Testing Purpose -->
-            {% for num in range(9) %}
+            <!-- {% for num in range(9) %}
                 <div class="formItem">
                     <a href="/formList/{{num}}">
                         <div class="formItemContent">
@@ -29,7 +29,7 @@
                         </div>
                     </a>
                 </div>
-            {% endfor %}
+            {% endfor %} -->
         </div>
     </div>
     {% endblock %}

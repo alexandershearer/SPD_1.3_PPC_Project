@@ -1,26 +1,32 @@
 {% extends 'base.html' %}
-    {% block title %}
-        formsList
-    {% endblock %}
-    {% block head %}
-    <link rel="stylesheet" href="/static/styles/formList.css">
-    {% endblock %}
-    {% block content %}
-    <div class='formListContent'>
-        <div class="formList">
-            <!-- storedForms is json format object w/ info -->
-            {% for form in jsonData %}
-                <div class="formItem">
-                    <a href="/formList/{{form['eventName']}}">
-                        <div class="formItemContent">
-                            <h3>{{form['eventName']}}</h3>
-                            <p>{{form['eventDiscription']}}</p>
-                        </div>
-                    </a>
+{% block title %}
+formsList
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/styles/formList.css">
+{% endblock %}
+{% block content %}
+<div class='formListContent'>
+    <div class="listGreeting">
+        <h1 class="listTitle">Events</h1>
+        <h3 class="listDescription">This will be the home to all of the events you have created and that are upcoming.
+            Make sure you never
+            forget to plan.</h3>
+    </div>
+    <div class="formList">
+        <!-- storedForms is json format object w/ info -->
+        {% for form in jsonData %}
+        <div class="formItem">
+            <a href="/formList/{{form['eventName']}}">
+                <div class="formItemContent">
+                    <h3 class="formTitle">{{form['eventName']}}</h3>
+                    <p>{{form['eventDiscription']}}</p>
                 </div>
-            {% endfor %}
-            <!-- Testing Purpose -->
-            <!-- {% for num in range(9) %}
+            </a>
+        </div>
+        {% endfor %}
+        <!-- Testing Purpose -->
+        <!-- {% for num in range(9) %}
                 <div class="formItem">
                     <a href="/formList/{{num}}">
                         <div class="formItemContent">
@@ -30,6 +36,6 @@
                     </a>
                 </div>
             {% endfor %} -->
-        </div>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}

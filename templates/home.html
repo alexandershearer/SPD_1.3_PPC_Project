@@ -8,25 +8,57 @@ Home page
 {% block content %}
 <div class='homeContent'>
     <div class="hero">
-        <h1>Welcome to the home page!</h1>
+        <h1 class="greeting">Welcome to Plannr!</h1>
         <div class="heroBlock">
-            <img src="https://www.dammitjackevents.com/wp-content/uploads/2017/09/Party-Event.jpg">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi unde architecto alias velit debitis at
-                porro eligendi eveniet quaerat, omnis eius iure consectetur enim ut libero possimus. Corrupti, dolores!
-            </p>
+            <img class="greetingImg" src="https://www.dammitjackevents.com/wp-content/uploads/2017/09/Party-Event.jpg">
+            <h1>We know planning can be stressful. Start organizing with Plannr early to get the most out of any event
+                you need to
+                prepare for!
+            </h1>
         </div>
     </div>
     <div class="greetingBreak">
         <h2 class="breakText">Get started with a few of these ideas!</h2>
-    </div>
-    <div class="showcase">
-        <div class="showcaseImages">
-            <img class="shwImg"
-                src="https://www.beaches.com/blog/content/images/2019/11/Beach-Wedding-Detail-Aisle-Flowers-1.jpg">
-            <img class="shwImg" src="https://www.sgvtribune.com/wp-content/uploads/2019/03/iStock-999985068-1.jpg">
-            <img class="shwImg"
-                src="https://www.rollingstone.com/wp-content/uploads/2020/03/ConcertCrowd.jpg?resize=1800,1200&w=1800">
+        <div class="showcaseCards">
+            <div class="card">
+                <img class="cardImg" src="https://showcasewedding.ca/wp-content/uploads/2017/10/11.jpg" alt="Avatar"
+                    style="width:100%">
+                <div class="container">
+                    <h4><b>Wedding</b></h4>
+                    <p>Weddings are a huge part of someones life and they take a long time to prepare for. Make sure
+                        everyone is there and all close friends and
+                        family are helping out to make it the best possible wedding!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="cardImg"
+                    src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_601920764_2000133320009280328_417429.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Birthday</b></h4>
+                    <p>Birthdays make people feel like it's their day. Make it a special one for them by getting the
+                        jump and surprising them
+                        with everything they could want!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="cardImg"
+                    src="https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/19/2016/05/18120226/gig-checklist-main-pic.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Concert</b></h4>
+                    <p>Part of a band and want to throw together a gig for your friends and family? Have them help get
+                        things in motion
+                        and everyone invited to have an awesome time!
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+</div>
 </div>
 {% endblock %}

@@ -4,6 +4,21 @@
     display: flex;
     flex-wrap: wrap;
 }
+.listGreeting{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.listDescription{
+    text-align: center;
+}
+.listTitle{
+    text-align: center;
+}
+.formTitle{
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
 .formItem {
     border: solid black 1px;
     width: 20vw;

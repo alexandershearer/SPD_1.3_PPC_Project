@@ -1,6 +1,5 @@
 body{
     font-family: 'Montserrat' , sans-serif;
-    margin: 20px 30px;
 }
 
 .main-header{
@@ -10,8 +9,6 @@ body{
 }
 .intro{
     margin-top: 20px;
-    border: 2px solid black;
-    box-shadow: 2px 2px 2px 2px black;
     text-align: center;
     
 }
@@ -43,6 +40,16 @@ article:hover{
     background-color: slategrey;
     box-shadow: 4px 4px 20px 7px black;
 }
+
+article > h3 :hover{
+    background-color: slategrey;
+}
+
+.social{
+    background-color: #D5C8C4;
+    color: #281B1A;
+}
+
 
 .Image{
     width: 200px;

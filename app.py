@@ -8,6 +8,11 @@ def homepage():
     """A homepage."""
     return render_template('home.html')
 
+@app.route('/about')
+def about():
+    """About Page."""
+    return render_template('about.html')
+
 @app.route('/formList')
 def formList():
     """Form list page"""

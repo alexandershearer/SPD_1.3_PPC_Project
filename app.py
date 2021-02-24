@@ -13,7 +13,7 @@ def formList():
     """Form list page"""
     jsonData = [
         {
-        "eventName":"the first event",
+        "eventName":"Birthday Party",
         "startDate":"",
         "endDate":"",
         "participants":"",

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: officecodeprod-light
+font link: https://github.com/nathco/Office-Code-Pro
+font author: Nathan Rutzky
+font author site: https://nath.co/
+
+
+icon designer: Gregor Cresnar
+icon designer link: /grega.cresnar
+        
+{"bg":"#F3EEEE","icon-gradient-0":"#87544E","icon-gradient-1":"#87544E","font":"#2C1B19","slogan":"#402f2d"}
+      

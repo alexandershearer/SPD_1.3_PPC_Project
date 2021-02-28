@@ -3,4 +3,7 @@
     text-align: center;
     color: #d5c9c4;
     background-color: #271a19;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

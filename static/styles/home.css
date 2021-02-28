@@ -3,7 +3,6 @@
 }
 .hero {
     text-align: center;
-    font-weight: 600;
     font-size: larger;
     padding: 0 1em 1em 1em;
 }
@@ -20,7 +19,6 @@
 }
 .greeting{
     font-weight: bolder;
-    text-decoration: underline;
 }
 .heroBlock > h1 {
     margin-left: 15px;
@@ -89,10 +87,13 @@
     width: 40%;
   }
 
+.card > h4 {
+    font-weight: 400;
+}
+
 .container > h4 {
     font-size: 18pt;
     padding-bottom: 10px;
-    text-decoration: underline;
 }
   
   .card:hover {

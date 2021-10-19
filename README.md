@@ -1,4 +1,4 @@
-# FEW 1.3 PPC Project
+# Plannr | FEW 1.3 PPC Project
 Built using Flask, Jinja,
 
 ## Plannr - For planning all events without stress. 
